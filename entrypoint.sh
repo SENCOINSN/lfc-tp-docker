@@ -15,6 +15,6 @@ if [ -z "$DATASOURCE_PASSWORD" ]; then
   exit 1
 fi
 
-echo "starting container with $DATASOURCE_URL  - $DATASOURCE_USERNAME - $DATASOURCE_PASSWORD"
+
 java -jar transactions-0.0.1-SNAPSHOT.jar
 exec "$@"
