@@ -5,4 +5,4 @@ COPY ./entrypoint.sh /usr/bin/entrypoint.sh
 WORKDIR /usr/app
 RUN chmod +x /usr/bin/entrypoint.sh
 EXPOSE 8080
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["java", "-jar", "transactions-0.0.1-SNAPSHOT.jar"]
